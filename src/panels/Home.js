@@ -16,7 +16,7 @@ const Home = ({ id, go }) => (
 
 		<Group title="Navigation Example">
 			<Div style={{ display: 'flex', flexDirection: 'column', justifyСontent: 'center' }}>
-				<Div className="center" style={{ padding: 60, color: 'gray' }}>
+				<Div className="center" style={{ paddingTop: 48, paddingRight: 32, paddingBlock: 48, paddingLeft: 32, color: 'gray' }}>
 					У вас пока нет сборов. Начните доброе дело.
           		</Div>
 				<Button className="center" onClick={go} data-to="persik">
