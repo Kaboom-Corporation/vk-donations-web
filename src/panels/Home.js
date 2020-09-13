@@ -8,23 +8,20 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
-const Home = ({ id, go, fetchedUser }) => (
+import './Home.css';
+
+const Home = ({ id, go }) => (
 	<Panel id={id}>
 		<PanelHeader>Example</PanelHeader>
-		{fetchedUser &&
-		<Group title="User Data Fetched with VK Bridge">
-			{/* <Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell> */}
-		</Group>}
 
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Show me the Persik, please
+				<Div className={center} style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
+            		У Вас пока нет сборов.
+					Начните доброе дело.
+          		</Div>
+				<Button className={center} size="xl" level="2" onClick={go} data-to="persik">
+					Создать сбор
 				</Button>
 			</Div>
 		</Group>
