@@ -15,7 +15,7 @@ const Home = ({ id, go }) => (
 		<PanelHeader>Пожертвования</PanelHeader>
 
 		<Group title="Navigation Example">
-			<Div>
+			<Div style={{ display: 'flex', flex-direction: 'column', justify-content:'center' }}>
 				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
 					<p>У вас пока нет сборов. Начните доброе дело.</p>
           		</Div>
