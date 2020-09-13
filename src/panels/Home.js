@@ -16,11 +16,11 @@ const Home = ({ id, go }) => (
 
 		<Group title="Navigation Example">
 			<Div>
-				<Div className={center} style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
+				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
             		У Вас пока нет сборов.
 					Начните доброе дело.
           		</Div>
-				<Button className={center} size="xl" level="2" onClick={go} data-to="persik">
+				<Button className="center" size="xl" level="2" onClick={go} data-to="persik">
 					Создать сбор
 				</Button>
 			</Div>
