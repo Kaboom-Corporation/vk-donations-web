@@ -18,10 +18,10 @@ const Home = ({ id, go }) => (
 			<Div>
 				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
             		У Вас пока нет сборов.
-					<a/>
+					<p/>
 					Начните доброе дело.
           		</Div>
-				<Button className="center" onClick={go} data-to="persik">
+				<Button size="xs" level="2" className="center" onClick={go} data-to="persik">
 					Создать сбор
 				</Button>
 			</Div>
