@@ -15,13 +15,12 @@ const Home = ({ id, go }) => (
 		<PanelHeader>Пожертвования</PanelHeader>
 
 		<Group title="Navigation Example">
-			<Div>
-				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
+			<Div className="center">
+				<Div className="text" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
             		У Вас пока нет сборов.
-					<p/>
-					Начните доброе дело.
+					<p>У вас пока нет сборов. </p>
           		</Div>
-				<Button size="xs" level="2" className="center" onClick={go} data-to="persik">
+				<Button className="button" onClick={go} data-to="persik">
 					Создать сбор
 				</Button>
 			</Div>

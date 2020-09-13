@@ -1,4 +1,55 @@
 .center{
     display: flex;
-    justify-content: center
+    flex-direction: column;
+    padding: 0px;
+    
+    position: absolute;
+    width: 375px;
+    height: 196px;
+    left: 0px;
+    top: calc(50% - 196px/2);
+}
+.text {
+    /* ↳ Text */
+
+position: static;
+left: 32px;
+right: 32px;
+top: 24.49%;
+bottom: 55.1%;
+
+/* or 125% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.32px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+margin: 0px 8px;
+}
+
+.button {
+    /* Auto Layout */
+
+display: flex;
+flex-direction: row;
+padding: 0px 16px;
+
+position: static;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+margin: 0px 0px;
 }
