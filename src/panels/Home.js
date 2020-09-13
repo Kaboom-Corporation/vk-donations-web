@@ -18,8 +18,7 @@ const Home = ({ id, go }) => (
 			<Div>
 				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
             		У Вас пока нет сборов.
-					<br/>
-					<br/>
+					<a/>
 					Начните доброе дело.
           		</Div>
 				<Button className="center" onClick={go} data-to="persik">
@@ -32,15 +31,7 @@ const Home = ({ id, go }) => (
 
 Home.propTypes = {
 	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-	fetchedUser: PropTypes.shape({
-		photo_200: PropTypes.string,
-		first_name: PropTypes.string,
-		last_name: PropTypes.string,
-		city: PropTypes.shape({
-			title: PropTypes.string,
-		}),
-	}),
+	go: PropTypes.func.isRequired
 };
 
 export default Home;
