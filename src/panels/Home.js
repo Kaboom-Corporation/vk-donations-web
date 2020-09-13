@@ -17,8 +17,7 @@ const Home = ({ id, go }) => (
 		<Group title="Navigation Example">
 			<Div>
 				<Div className="center" style={{ paddingTop: 60, paddingBottom: 60, color: 'gray' }}>
-					<p>У вас пока нет сборов. </p>
-					Начните доброе дело.
+					<p>У вас пока нет сборов. Начните доброе дело.</p>
           		</Div>
 				<Button className="center" onClick={go} data-to="persik">
 					Создать сбор
