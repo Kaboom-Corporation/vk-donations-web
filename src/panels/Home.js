@@ -19,7 +19,7 @@ const Home = ({ id, go }) => (
 				<Div className="center" style={{ paddingTop: 48, paddingRight: 32, paddingBlock: 48, paddingLeft: 32, color: 'gray' }}>
 					У вас пока нет сборов. Начните доброе дело.
           		</Div>
-				<Button className="center" onClick={go} data-to="persik">
+				<Button className="center" onClick={go} data-to="type">
 					Создать сбор
 				</Button>
 			</Div>
